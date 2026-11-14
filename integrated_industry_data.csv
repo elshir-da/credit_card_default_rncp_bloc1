@@ -1,0 +1,37 @@
+﻿source,indicator,value,unit,reporting_period,granularity
+NCCC Taiwan,cash_advance_amount_100m_twd,40.0,100 million TWD,2009,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,40.0,100 million TWD,2010,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,38.0,100 million TWD,2011,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,36.0,100 million TWD,2012,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,34.0,100 million TWD,2013,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,34.0,100 million TWD,2014,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,34.0,100 million TWD,2015,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,35.0,100 million TWD,2016,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,35.0,100 million TWD,2017,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,37.0,100 million TWD,2018,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,38.0,100 million TWD,2019,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,30.0,100 million TWD,2020,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,26.0,100 million TWD,2021,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,27.0,100 million TWD,2022,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,28.0,100 million TWD,2023,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,34.0,100 million TWD,2024,Annual industry-level
+NCCC Taiwan,cash_advance_amount_100m_twd,33.0,100 million TWD,2025,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,454.0,1000 transactions,2009,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,469.0,1000 transactions,2010,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,457.0,1000 transactions,2011,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,446.0,1000 transactions,2012,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,432.0,1000 transactions,2013,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,434.0,1000 transactions,2014,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,446.0,1000 transactions,2015,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,446.0,1000 transactions,2016,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,434.0,1000 transactions,2017,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,490.0,1000 transactions,2018,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,506.0,1000 transactions,2019,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,372.0,1000 transactions,2020,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,307.0,1000 transactions,2021,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,312.0,1000 transactions,2022,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,357.0,1000 transactions,2023,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,407.0,1000 transactions,2024,Annual industry-level
+NCCC Taiwan,cash_advance_transactions_1000,397.0,1000 transactions,2025,Annual industry-level
+FSC Taiwan,credit_cards_in_circulation,59612.0,1000 cards,Not specified in extracted CSV,Industry indicator-level
+FSC Taiwan,aggregate_credit_card_debt,432.59,NTD billion,Not specified in extracted CSV,Industry indicator-level

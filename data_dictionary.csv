@@ -1,0 +1,34 @@
+﻿source,field_name,data_type,description,unit,granularity,period
+UCI Dataset,ID,int64,Customer identifier,ID,Customer-level,2005
+UCI Dataset,LIMIT_BAL,int64,Credit limit,NTD,Customer-level,2005
+UCI Dataset,SEX,int64,Encoded sex category,Category code,Customer-level,2005
+UCI Dataset,EDUCATION,int64,Encoded education category,Category code,Customer-level,2005
+UCI Dataset,MARRIAGE,int64,Encoded marital status,Category code,Customer-level,2005
+UCI Dataset,AGE,int64,Customer age,Years,Customer-level,2005
+UCI Dataset,PAY_0,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_2,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_3,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_4,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_5,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_6,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,BILL_AMT1,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,BILL_AMT2,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,BILL_AMT3,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,BILL_AMT4,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,BILL_AMT5,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,BILL_AMT6,int64,Monthly credit card bill amount,NTD,Customer-level,2005
+UCI Dataset,PAY_AMT1,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_AMT2,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_AMT3,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_AMT4,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_AMT5,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,PAY_AMT6,int64,Monthly repayment status (historical),Repayment status code,Customer-level,2005
+UCI Dataset,default payment next month,int64,"Default payment in the following month (0 = No Default, 1 = Default)",Binary label,Customer-level,2005
+NCCC API,year,int64,Reporting year,Year,Annual industry-level,2009-2025
+NCCC API,cash_advance_amount_100m_twd,int64,Annual cash advance amount,100 million TWD,Annual industry-level,2009-2025
+NCCC API,cash_advance_transactions_1000,int64,Annual cash advance transactions,1000 transactions,Annual industry-level,2009-2025
+NCCC API,source,object,Data source organization,Text,Annual industry-level,2009-2025
+FSC Web Scraping,indicator,object,Financial indicator name,Text,Industry indicator-level,As published on source website
+FSC Web Scraping,value,float64,Reported indicator value,Indicator-specific,Industry indicator-level,As published on source website
+FSC Web Scraping,source,object,Data source organization,Text,Industry indicator-level,As published on source website
+FSC Web Scraping,source_url,object,Original webpage URL,URL,Industry indicator-level,As published on source website

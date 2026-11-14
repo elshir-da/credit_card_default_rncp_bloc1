@@ -1,0 +1,220 @@
+
+openapi: 3.0.3
+
+info:
+  title: Credit Card Default API
+  version: 1.0.0
+  description: >
+    Educational REST API providing customer records
+    and aggregated credit card default statistics
+    from a MySQL database.
+    Intended for local demonstration only.
+
+servers:
+  - url: http://127.0.0.1:5000
+    description: Local Flask development server
+
+tags:
+  - name: Customers
+    description: Customer data retrieval
+  - name: Defaults
+    description: Credit card default statistics
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key required to access all endpoints.
+
+  schemas:
+    Customer:
+      type: object
+      properties:
+        customer_id:
+          type: integer
+          example: 1
+        age:
+          type: integer
+          example: 24
+        limit_bal:
+          type: string
+          description: Credit limit returned as a decimal string.
+          example: "20000.00"
+        default_next_month:
+          type: integer
+          enum: [0, 1]
+          description: "0 = No Default, 1 = Default"
+
+    CustomerList:
+      type: object
+      properties:
+        page:
+          type: integer
+          example: 1
+        limit:
+          type: integer
+          example: 5
+        customers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Customer"
+
+    CustomerCount:
+      type: object
+      properties:
+        total_customers:
+          type: integer
+          example: 30000
+
+    DefaultSummary:
+      type: object
+      properties:
+        total_customers:
+          type: integer
+          example: 30000
+        default_customers:
+          type: integer
+          example: 6636
+        default_rate_percent:
+          type: number
+          format: float
+          example: 22.12
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Unauthorized
+
+security:
+  - ApiKeyAuth: []
+
+paths:
+
+  /customers/count:
+    get:
+      tags:
+        - Customers
+      summary: Get total customer count
+      description: Return the total number of customers.
+      responses:
+        "200":
+          description: Customer count retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CustomerCount"
+
+        "401":
+          description: Missing or invalid API key
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /customers:
+    get:
+      tags:
+        - Customers
+      summary: List customers with pagination
+      description: >
+        Return a paginated list of customer records.
+        Maximum 100 customers per request.
+      parameters:
+        - name: page
+          in: query
+          required: false
+          description: Page number
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+
+        - name: limit
+          in: query
+          required: false
+          description: Number of customers per page
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
+
+      responses:
+        "200":
+          description: Customer list retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CustomerList"
+
+        "401":
+          description: Missing or invalid API key
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /customers/{customer_id}:
+    get:
+      tags:
+        - Customers
+      summary: Get a customer by ID
+      description: Retrieve one customer using the customer ID.
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          description: Unique customer identifier
+          schema:
+            type: integer
+            minimum: 1
+
+      responses:
+        "200":
+          description: Customer retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+
+        "401":
+          description: Missing or invalid API key
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+        "404":
+          description: Customer not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /defaults/summary:
+    get:
+      tags:
+        - Defaults
+      summary: Get credit card default statistics
+      description: >
+        Return total customers, default customers,
+        and the overall default rate.
+
+      responses:
+        "200":
+          description: Default statistics retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DefaultSummary"
+
+        "401":
+          description: Missing or invalid API key
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
