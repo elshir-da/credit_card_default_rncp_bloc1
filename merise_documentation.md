@@ -27,6 +27,18 @@ The conceptual relationships are:
 
 Each historical record belongs to one customer.
 
+### 2.1 Merise Conceptual Data Model (MCD)
+
+The conceptual data model (MCD) is provided in `Merise_MCD_Credit_Card_Default.png`, with the editable source file `Merise_MCD_Credit_Card_Default.drawio`.
+
+It represents four entities (Customer, Repayment Status, Billing History, and Payment History), three associations, and their cardinalities.
+
+Each customer is associated with multiple historical records (1,N), while each historical record belongs to exactly one customer (1,1).
+
+The physical database implementation is documented separately in `ERD1.png` and `ERD2.png`.
+
+![Merise Conceptual Data Model](Merise_MCD_Credit_Card_Default.png)
+
 ## 3. Logical Data Model (MLD)
 
 The conceptual entities were translated into four relational tables.
