@@ -1,5 +1,7 @@
 # Credit Card Default Prediction — RNCP Bloc 1
 
+**GitHub Repository:** https://github.com/elshir-da/credit_card_default_rncp_bloc1
+
 ## Project Overview
 
 **Project type:** RNCP Bloc 1 — Data Engineering & Analytics (educational proof of concept)  
