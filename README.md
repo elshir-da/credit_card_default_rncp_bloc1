@@ -15,6 +15,14 @@ The goal is to support earlier identification of customers at risk of default wh
 
 > **Project status:** The machine learning analysis, exploratory business simulations, and educational data engineering prototypes are complete. Data engineering work includes MySQL, SQL analysis, BigQuery, a local Flask API, an external API request, and web scraping. These are separate proof-of-concept components, **not** a production deployment or an automated end-to-end pipeline.
 
+## Project Planning
+
+Project tasks were managed using Trello, with three workflow stages: To Do, In Progress, and Done.
+
+The board tracks data collection, data cleaning, MySQL database design, BigQuery analysis, Flask API development, GDPR documentation, and final project deliverables.
+
+![Trello Project Planning](trello_project_planning.png)
+
 ## Business Problem
 
 Credit card default is a challenge for financial institutions. A model that misses too many defaulting customers may fail to identify important risks, while a model that flags too many non-defaulting customers may generate unnecessary review costs.
