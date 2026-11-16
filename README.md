@@ -340,7 +340,7 @@ Estimated Business Error Cost by Model.png
 
 Merise_MCD_Credit_Card_Default.png       # Formal Merise MCD
 Merise_MCD_Credit_Card_Default.drawio    # Editable conceptual model
-Credit_Card_Default_RNCP_Bloc1_Report_14_Pages.pdf  # RNCP professional report
+Credit_Card_Default_RNCP_Bloc1_Report_11_Pages.pdf  # RNCP professional report
 ```
 
 ### RNCP Submission Deliverables
